@@ -11,7 +11,7 @@ export default function OurCraft() {
                     <motion.div
                         initial={{ opacity: 0, x: -40 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
                         viewport={{ once: true }}
                         className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl"
                     >
@@ -27,7 +27,7 @@ export default function OurCraft() {
                     <motion.div
                         initial={{ opacity: 0, x: 40 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                        transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
                         viewport={{ once: true }}
                         className="space-y-8"
                     >
